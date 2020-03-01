@@ -10,6 +10,7 @@ PHP+JS/JQ+HTML+CSS；
 用户名: xmzzl   密码: zaqxsw
 
 ![image](https://github.com/woocyouth/students_services-/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20200301172339.png)
+![image](https://github.com/woocyouth/students_services-/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20200301172353.png)
 
 CSS/ 
 add_error_html.css : 添加错误页面
