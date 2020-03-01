@@ -6,7 +6,7 @@ PHP+JS/JQ+HTML+CSS；
 
 主要实现功能：
 登录/注册，使用php连接MySQL对学生信息进行添加/修改/删除，上传/下载文件。
-
+演示网址: http://www.woocyouth.club/students_ser/login_register/login.php
 
 CSS/ 
 add_error_html.css : 添加错误页面
