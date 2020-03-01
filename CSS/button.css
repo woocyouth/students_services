@@ -1,0 +1,158 @@
+.reg .td-btn .styled-button {
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-size: 14px;
+  width: 50%;
+  padding: 20px;
+  outline: none;
+  background: none;
+  position: relative;
+  color: #492e72;
+  border-radius: 3px;
+  margin-bottom: 25px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  background: #714cac;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.reg .td-btn .styled-button__real-text-holder {
+  position: relative;
+}
+.reg .td-btn .styled-button__real-text {
+  color: transparent;
+  display: inline-block;
+}
+.reg .td-btn .styled-button__text-holder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.reg .td-btn .styled-button__moving-block {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.reg .td-btn .styled-button__moving-block.back {
+  color: white;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.reg .td-btn .styled-button__moving-block.back .styled-button__text-holder {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+.reg .td-btn .styled-button:hover,
+.reg .td-btn .styled-button:active {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background: #7a51bb;
+}
+.reg .td-btn .styled-button:hover .face,
+.reg .td-btn .styled-button:active .face {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+.reg .td-btn .styled-button:hover .face .styled-button__text-holder,
+.styled-button:active .face .styled-button__text-holder {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.reg .td-btn .styled-button:hover .back,
+.reg .td-btn .styled-button:active .back {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.reg .td-btn .styled-button:hover .back .styled-button__text-holder,
+.reg .td-btn .styled-button:active .back .styled-button__text-holder {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.reg .td-btn .styled-button:active {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.spinner {
+  position: relative;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+.spinner__circular {
+  -webkit-animation: rotate 1.5s linear infinite;
+          animation: rotate 1.5s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: auto;
+}
+.spinner__path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 1.3s ease forwards 0.5s;
+          animation: dash 1.3s ease forwards 0.5s;
+  opacity: 0;
+  stroke-linecap: round;
+  stroke: #7b23ff;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+@-webkit-keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+  50% {
+    stroke-dasharray: 40, 200;
+    opacity: 1;
+  }
+  100% {
+    stroke-dasharray: 125, 200;
+    opacity: 1;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+  50% {
+    stroke-dasharray: 40, 200;
+    opacity: 1;
+  }
+  100% {
+    stroke-dasharray: 125, 200;
+    opacity: 1;
+  }
+}

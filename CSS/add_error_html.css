@@ -1,0 +1,5 @@
+body{margin:300px auto;padding:0;width: 400px;background-image: url('../images/bg_3.jpg');}
+.error-box{padding: 10px;text-align:center;background:#c9c0c091;font-size:14px;color:#000000;}
+.error-box ul{margin: 10px auto;padding: 5px; list-style: none;line-height:30px;color:#ecf0f1;}
+.error-box span{margin-top: -30px;padding-left:-5px;color:#ecf0f1;font-size:16px;}
+.button{width:120px;height:30px;margin: 10px;}
